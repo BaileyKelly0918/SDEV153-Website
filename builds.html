@@ -3,32 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe Layout</title>
+    <title>Builds | SprueLab</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="container">
         <header class="header">
-            <h1>SprueLab</h1>
-            <h2>Build • Display • Inspire</h2>
+            <div class="logo-title">
+                <img src="icons/logo.svg" alt="SprueLab Logo" class="logo">
+                <h1><a href="index.html">SprueLab</a></h1>
+            </div>
+            <h2 class="slogan">Build • Display • Inspire</h2>
         </header>
 
         <aside class="sidebar">
             <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="builds.html" class="active">My Builds</a></li>
-            <li><a href="favorites.html">Favorites</a></li>
-            <li><a href="tutorials.html">Tutorials</a></li>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="builds"><a href="builds.html" class="active">My Builds</a></li>
+            <li class="favorites"><a href="favorites.html">Favorites</a></li>
+            <li class="tools"><a href="tools.html">Tools</a></li>
+            <li class="about"><a href="about.html">About Me</a></li>
             </ul>
         </aside>
 
         <main class="main">
-            <h1>Builds page</h1>
-        </main>
+
+    <section class="builds-header">
+        <h2>My Builds</h2>
+        <p>A collection of all the Gunpla kits I've built and customized.</p>
+    </section>
+
+    <section class="builds-grid">
+
+        <div class="build-card">
+            <img src="images/eclipse.jpg" alt="MG Eclipse">
+            <h3>MG Eclipse</h3>
+            <p>Built and Panel Lined</p>
+        </div>
+
+        <div class="build-card">
+            <img src="images/wing.jpg" alt="MG Wing Zero EW Ver.Ka">
+            <h3>MG Wing Zero EW Ver.Ka</h3>
+            <p>Straight Build</p>
+        </div>
+
+        <div class="build-card">
+            <img src="images/rouge.jpg" alt="PG Strike Rouge">
+            <h3>PG Strike Rouge</h3>
+            <p>Built, Panel Lined, and Decals</p>
+        </div>
+
+        
+    </section>
+
+</main>
 
         <footer class="footer">
-            <p>Footer</p>
+            <p>© 2026 SprueLab</p>
         </footer>
     </div>
 

@@ -3,32 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe Layout</title>
+    <title>Home | SprueLab</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="container">
         <header class="header">
-            <h1>SprueLab</h1>
-            <h2>Build • Display • Inspire</h2>
+            <div class="logo-title">
+                <img src="icons/logo.svg" alt="SprueLab Logo" class="logo">
+                <h1><a href="index.html">SprueLab</a></h1>
+            </div>
+            <h2 class="slogan">Build • Display • Inspire</h2>
         </header>
 
         <aside class="sidebar">
             <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="builds.html">My Builds</a></li>
-            <li><a href="favorites.html">Favorites</a></li>
-            <li><a href="tutorials.html">Tutorials</a></li>
+            <li class="home"><a href="index.html" class="active">Home</a></li>
+            <li class="builds"><a href="builds.html">My Builds</a></li>
+            <li class="favorites"><a href="favorites.html">Favorites</a></li>
+            <li class="tools"><a href="tools.html">Tools</a></li>
+            <li class="about"><a href="about.html">About Me</a></li>
             </ul>
         </aside>
 
         <main class="main">
-            <h1>Home Page</h1>
+            <section class="hero">
+                <h2>Welcome to SprueLab</h2>
+                <p>Custom Gunpla builds, detailed craftsmanship, and creative expression through plastic.</p>
+                <div class="hero-buttons">
+                    <a href="builds.html" class="btn">View Builds</a>
+                    <a href="favorites.html" class="btn">Favorites</a>
+                    <a href="tools.html" class="btn">Tools</a>
+                </div>
+            </section>
+
+            <section class="featured">
+                <h2>Featured Builds</h2>
+                <div class="gallery">
+                    <div class="card">
+                        <img src="images/eclipse.jpg" alt="MG Eclipse">
+                        <p>MG Eclipse</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/wing.jpg" alt="MG Wing Zero Ver.Ka">
+                        <p>MG Wing Zero Ver.Ka</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/rouge.jpg" alt="PG Strike Rouge">
+                        <p>PG Strike Rouge</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-preview">
+                <h2>About SprueLab</h2>
+                <p>
+                    SprueLab is where I document my Gunpla journey, from straight builds to fully customized kits.
+                    Every model tells a story of patience, creativity, and detail.
+                </p>
+                <a href="about.html" class="btn">Learn More</a>
+            </section>
         </main>
 
         <footer class="footer">
-            <p>Footer</p>
+            <p>© 2026 SprueLab</p>
         </footer>
     </div>
 
