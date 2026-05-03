@@ -40,6 +40,10 @@ html, body {
     z-index: 1000;
 }
 
+.header h1 {
+    color: white;
+}
+
 .header a {
     text-decoration: none;
     color: white;
@@ -344,4 +348,62 @@ h1, h2, h3 {
 
 .slogan {
     color: white;
+}
+
+.about-extra table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.about-extra th,
+.about-extra td {
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.about-extra th {
+    background-color: #1E3A8A;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.about-extra tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.about-extra tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.about-extra tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: relative;
+        top: 0;
+        height: auto;
+        border-right: none;
+        border-top: 1px solid #ddd;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
 }
